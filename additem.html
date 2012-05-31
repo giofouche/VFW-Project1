@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Add Game</title>
+		<meta name="description" content="Add Movie Page" />
+		<meta name="keywords" content="" />
+		<meta name="robots" content="" />
+	</head>
+	<body>
+		<h1>Add Game</h1>
+		<form action="" method="post">
+			<fieldset>
+				<legend>Select Genre</legend> <!-- Drop down box to select a game category -->
+				<label for="genre">Game Genre: </label>
+				<select id="genre"> <!-- select -->
+					<optgroup label="Genres">
+						<option value="shooter">Shooter</option> <!-- options -->
+						<option value="sports">Sports</option>
+						<option value="action">Action</option>
+						<option value="rpg">RPG</option>
+						<option value="platformer">Platformer</option>
+						<option value="fighting">Fighting</option>
+						<option value="other">Other</option>
+					</optgroup>
+				</select>
+				</label>
+			</fieldset>
+			<br />
+			<fieldset>
+				<legend>Game Information</legend>
+				<ul>
+					<li><label for="title">Game Title:</label><br />
+					<input type="text" id="title" /></li> <!-- text field -->
+					<li><label for="genre">Genre:</label><br />
+					<input type="text" id="actor" /></li> <!-- text field -->
+					<li><label for="rating">Rating:</label><br />
+					<input type="text" id="director" /></li> <!-- text field -->
+					<li><label for="fun">Fun Factor:</label><br />
+					<input type="range" min="1" max="10" id="rating" /></li> <!-- range field -->
+					<li><label for="favorites">Add to favorites?</label><br />
+					<input type="checkbox" id="favorites" /></li> <!-- checkbox -->
+					<li><label for="family">Is this a family game?</label><br />
+						<ul>
+							<li><label for="yes">Yes </label><input type="radio" checked value="yes" id="yes" name="family" /></li> <!-- radio button yes -->
+							<li><label for="no">No </label><input type="radio" value="no" id="no" name="family" /></li> <!-- radio button no -->
+						</ul>
+					</li>
+					<li><label for="release">Release Date:</label><br />
+					<input type="date" min="1900-01-01" max="" placeholder="2012-05-31" required aria-required="true" id="title" /></li> <!-- date field -->
+					<li><label for="description">Game Description: </label><br />
+					<textarea></textarea></li> <!-- textarea -->
+				</ul>
+			</fieldset>
+			<br />
+			<input type="button" value="Add Game To Collection" /> <!-- button -->
+		</form>
+	</body>
+</html>
